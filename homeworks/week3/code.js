@@ -14,6 +14,19 @@ rl.on('close', () => {
 })
 
 function solve(input) {
-  const tmp = input[0].split(' ')
-  console.log(Number(tmp[0]) + Number(tmp[1]))
+  for (let i = 0; i < input.length; i++) {
+    const tmp = input[i].split(' ')
+    const a = Number(tmp[0])
+    const b = Number(tmp[1])
+
+    if (a === 0 && b === 0) {
+      return
+    }
+
+    if (a > b) {
+      console.log(a)
+    } else {
+      console.log(b)
+    }
+  }
 }
