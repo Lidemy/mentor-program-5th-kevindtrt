@@ -14,22 +14,28 @@ rl.on('close', () => {
 })
 
 function solve(input) {
-  /**
-   判斷數字的位數
-   n 的範圍為 1 ~ 6
-   建立一個for loop , from n to m , number
-     建立一個 switch 範圍
-     1
-     10
-     100
-     1000
-     10000
-     100000
-     1000000
+  const tmp = input[0].split(' ')
+  const n = Number(tmp[0])
+  const m = Number(tmp[1])
+  if (n < 1 || m > 1000000) {
+    return console.log('over')
+  }
 
-   建立一個 function 把 number 轉成字串 在切割 在還回去
-    建立一個 function 把字串帶回來 判斷 水仙花數 回傳 output++ \n
+  let narcissisticNumber = ''
+  for (let i = n; i <= m; i++) {
+    if (i === checkbox(i)) {
+      narcissisticNumber += `${i} + '\n'`
+    }
+  }
+  console.log(narcissisticNumber)
+}
 
-  */
-
+function checkbox(number) {
+  let str = ''
+  str = str + number
+  let numbTmp = 0
+  for (let i = 0; i < str.length; i++) {
+    numbTmp = numbTmp + (Number(str[i]) ** str.length)
+  }
+  return numbTmp
 }
