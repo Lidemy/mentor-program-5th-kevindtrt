@@ -14,19 +14,14 @@ rl.on('close', () => {
 })
 
 function solve(input) {
-  for (let i = 0; i < input.length; i++) {
-    const tmp = input[i].split(' ')
-    const a = Number(tmp[0])
-    const b = Number(tmp[1])
-
-    if (a === 0 && b === 0) {
-      return
-    }
-
-    if (a > b) {
-      console.log(a)
-    } else {
-      console.log(b)
-    }
+  const n = Number(input[0])
+  let star = ''
+  if (n < 1 || n > 30) {
+    return
+  }
+  // console.log('n =' + n)
+  for (let i = 1; i <= n; i++) {
+    star += '*'
+    console.log(star)
   }
 }

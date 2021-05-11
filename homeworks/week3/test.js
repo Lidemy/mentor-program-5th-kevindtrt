@@ -8,7 +8,7 @@ for (let k = 2; k < 10; k = k + 4) {
     for (let i = k; i < k + 4; i++) {
       // console.log('first1 =' + k)
       // console.log(`${i} x 1 = ${i * 1}`)
-      const strTmp = `${i} x ${j} = ${i * j}   `
+      const strTmp = `${i} x ${j} = ${i * j} \t`
       strLine += strTmp
       // console.log(strTmp)
     }
