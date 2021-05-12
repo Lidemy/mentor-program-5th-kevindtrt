@@ -14,42 +14,13 @@ rl.on('close', () => {
 })
 
 function solve(input) {
-  const arrCount = []
-  arrCount.push(input[0])
-  const arr = []
-  for (let i = 1; i < input.length - 1; i++) {
-    arr.push(input[i])
-  } // 17-22:擷取 input 資料
-  // console.log('step2')
-  if (Number(arrCount[0]) < 1 || Number(arrCount[0]) > 100) {
-    return console.log('N Out of Range')
-  } else {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] < 1 || arr[i] > 1000000) {
-        return console.log('P Out of Range')
-      }
+  const str1 = input[0]
+  const str2 = str1.split('').reverse().join('')
+  const center = Math.floor(str1.length / 2)
+  for (let i = 0; i < center; i++) {
+    if (str1[i] !== str2[i]) {
+      return console.log('False')
     }
   }
-  for (let i = 0; i < arr.length; i++) {
-    console.log(modCheck(Number(arr[i])))
-  }
-}
-
-function modCheck(number) {
-  const n = number
-  const end = Math.ceil(n / 2)
-  let mod = 0
-
-  for (let i = 2; i <= end; i++) {
-    if (n % i === 0) {
-      mod++
-    }
-  }
-  if (n === 1) {
-    return 'Composite'
-  } else if (mod < 1) {
-    return 'Prime'
-  } else {
-    return 'Composite'
-  }
+  return console.log('Ture')
 }
