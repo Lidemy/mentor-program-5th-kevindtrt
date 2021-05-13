@@ -13,8 +13,8 @@ rl.on('close', () => {
   solve(lines)
 })
 
-function solve(input) {
-  const str1 = input[0]
+function solve(lines) {
+  const str1 = lines[0]
   const str2 = str1.split('').reverse().join('')
   const center = Math.floor(str1.length / 2)
   for (let i = 0; i < center; i++) {
