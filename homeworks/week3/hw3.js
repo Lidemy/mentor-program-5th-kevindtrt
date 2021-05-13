@@ -13,14 +13,14 @@ rl.on('close', () => {
   solve(lines)
 })
 
-function solve(lines) {
+function solve(input) {
   const arrCount = []
-  arrCount.push(lines[0])
+  arrCount.push(input[0])
   const arr = []
-  for (let i = 1; i < lines.length - 1; i++) {
-    arr.push(lines[i])
-  }
-
+  for (let i = 1; i < input.length - 1; i++) {
+    arr.push(input[i])
+  } // 17-22:擷取 input 資料
+  // console.log('step2')
   if (Number(arrCount[0]) < 1 || Number(arrCount[0]) > 100) {
     return console.log('N Out of Range')
   } else {
