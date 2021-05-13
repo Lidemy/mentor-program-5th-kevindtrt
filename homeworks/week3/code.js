@@ -13,6 +13,7 @@ rl.on('close', () => {
   solve(lines)
 })
 
-function solve(input) {
-
+function solve(lines) {
+  const tmp = lines[0].split(' ')
+  console.log(Number(tmp[0]) + Number(tmp[1]))
 }
