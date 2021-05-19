@@ -14,7 +14,7 @@ rl.on('close', () => {
 })
 
 function solve(lines) {
-  const str = ''
+  const str = lines[0]
   console.log(str.split('').reverse().join('') === str ? 'Ture' : 'Fales')
 }
 
