@@ -15,7 +15,7 @@ rl.on('close', () => {
 
 function solve(lines) {
   for (let i = 1; i < lines.length; i++) {
-    console.log(isPrime(Number(lines[i])) ? 'prime' : 'Composite')
+    console.log(isPrime(Number(lines[i])) ? 'Prime' : 'Composite')
   }
 }
 
