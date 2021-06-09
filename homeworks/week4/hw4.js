@@ -36,5 +36,6 @@ request(
     for (const game of games) {
       console.log(game.viewers, ' ', game.game.name)
     }
+    // console.log(data.top[0].game.name)
   }
 )
