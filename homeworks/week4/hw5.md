@@ -19,13 +19,13 @@ API 就是一種軟體與軟體之間互相溝通的橋樑。
 
 Base URL: https://lidem-restaurant-store.herokuapp.com
 
-| 說明     | Method | path       | 參數                   |
-|--------|--------|------------|---------------------|----------------|
-| 獲取所有餐廳資訊 | GET    | /users     | _limit:限制回傳資料數量           | /books?_limit=5 |
-| 獲取單一餐廳資訊 | GET    | /users/:id | 無                    | /books/10      |
-| 新增   | POST   | /users     | name:店名  | 無              |
-| 刪除餐廳   | DELETE   | /users/:id     | 無 | 無              |
-| 更改餐廳   | PATCH   | /users/:id     | name: 店名 | 無              |
+| 說明          | Method   | path       | 參數                 |                |
+| ------------ | -------- | ---------- | ------------------- | ---------------- |
+| 獲取所有餐廳資訊| GET      | /users     | limit:限制回傳資料數量 | /books?limit=5 |
+| 獲取單一餐廳資訊| GET      | /users/:id | 無                   | /books/10      |
+| 新增          | POST     | /users     | name:店名            | 無              |
+| 刪除餐廳       | DELETE   | /users/:id | 無                   | 無              |
+| 更改餐廳       | PATCH    | /users/:id | name: 店名            | 無              |
 
 請在header 提供 Client-ID
 
