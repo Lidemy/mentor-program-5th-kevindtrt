@@ -65,7 +65,7 @@
 
 .banner {
   position: relative;
-  background: url(./2.jpg) center/cover no-repeat;
+  background: url(./bg.jpg) center/cover no-repeat;
   height: 400px;
 }
 .banner::after {
