@@ -49,9 +49,6 @@
     <div class="todos">
     </div>
   </div>
-    <form action="">
-      <input type="submit" value="">
-    </form>
   <script>
     document.querySelector('.btn-new').addEventListener('click', () => {
       const value = document.querySelector('.input-todo').value;
@@ -62,7 +59,6 @@
         <input class="todo__check" type="checkbox" />
         <div class="todo__title">${escapeHtml(value)}</div>
         <button class="btn-delete">刪除</button>
-        
       `
       document.querySelector('.todos').appendChild(div)
       document.querySelector('.input-todo').value = ''
@@ -79,7 +75,6 @@
 
       // check/uncheck todo
       if (target.classList.contains('todo__check')) {
-     
         if (target.checked) {
           target.parentNode.classList.add('done')
         } else {
